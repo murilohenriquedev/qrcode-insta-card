@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Insta Card</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+
+<body>
+    <main>
+        <!--Card-->
+        <div class="card-container ">
+            <!--QR Cord-->
+            <div class="qrcode-container"> 
+                <img class="qrcode " src="images/qrcode.jpg" alt="Qr Code da Jornada do programador">
+            </div>
+            <!--Botões de compartilhar e link -->
+            <div class="button-container">
+                <!--Botão de compartilhar-->
+                <button id= "compartilhar-perfil-button" class="button">
+                    <img src="images/icone-compartilhar.png" alt="icone de compartilhar">
+                    <span>Compartilhar perfil</span>
+                </button>
+                <!--Botão de link-->
+                <button id="copiar-link-btn" class="button"onclick = "copiarLink()" >
+                    <img src="images/icone-link.png" alt="icone link">
+                    <span id="copiar-link-text" >Copiar link</span>
+                </button>
+            </div>  
+            <h1>CONHEÇA A <br/>
+                <strong>Jornada de <br/>programador</strong>
+            </h1>
+            <img class="foguete" src="images/foguete.png" alt="icone foguete">
+
+        </div>
+    </main>
+    <script src="scripts/events.js"></script>
+</body>
+</html>
